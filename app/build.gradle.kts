@@ -37,7 +37,7 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 jacoco {
-    toolVersion = "0.8.8" // Версия JaCoCo
+    toolVersion = "0.8.12" // Версия JaCoCo
 }
 
 tasks.test {
