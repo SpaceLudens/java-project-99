@@ -21,6 +21,12 @@ configurations {
     }
 }
 
+checkstyle {
+    toolVersion = "10.0"
+    configFile = file("config/checkstyle/checkstyle.xml")
+}
+
+
 repositories {
     mavenCentral()
 }
