@@ -2,7 +2,10 @@ FROM amazoncorretto:21
 
 WORKDIR /app
 
-COPY . .
+COPY app/gradlew .
+COPY app/gradle/wrapper/gradle-wrapper.jar gradle/wrapper/gradle-wrapper.jar
+COPY app/gradle/wrapper/gradle-wrapper.properties gradle/wrapper/gradle-wrapper.properties
+COPY app/ .
 
 RUN chmod +x gradlew
 
