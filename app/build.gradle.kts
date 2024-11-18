@@ -4,6 +4,7 @@ plugins {
     id("io.spring.dependency-management") version "1.1.6"
     id("jacoco")
     checkstyle
+    id("io.freefair.lombok") version "8.6"
 }
 
 group = "hexlet.code"
@@ -35,7 +36,13 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation ("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-devtools")
+    implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    runtimeOnly("com.h2database:h2")
+    runtimeOnly("org.postgresql:postgresql")
+    implementation ("jakarta.validation:jakarta.validation-api:3.0.2")
+
+
 
 }
 

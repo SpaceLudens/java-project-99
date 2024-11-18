@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: postgresql://projectdb_urxe_user:Zx1Mt4QjgpGTB7xgbKjxbn0dEAUCtIl8@dpg-crludnbv2p9s73e4tn10-a/projectdb_urxe
+    username: ${projectdb_urxe_user}
+    password: ${Zx1Mt4QjgpGTB7xgbKjxbn0dEAUCtIl8}
+    driver-class-name: org.postgresql.Driver
